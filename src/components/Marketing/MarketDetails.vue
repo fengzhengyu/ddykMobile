@@ -56,6 +56,7 @@
   @import "../../style/common.less";
   .details-page{
     padding: 40px 0  90/@rem 0;
+   
   }
   .detail-wrapper{
     padding: 0 20/@rem 50/@rem 20/@rem;

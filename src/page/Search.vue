@@ -160,9 +160,6 @@
 <style lang="less" scoped>
   @import "../style/common.less";
 
-.searchPage{
-
-}
   .search-wrapper{
     background-color: @mainColor;
     display: inline-block;
@@ -219,7 +216,7 @@
         display: inline-block;
         width: 100%;
         height: 100%;
-        border: 1/@rem solid #fff;
+        border: 1px solid #fff;
       }
     }
   }
@@ -240,8 +237,8 @@
 
     display: table;
     height: 150 / @rem;
-    border-top: 0.01rem solid #bfbfbf;
-    padding: 20 / @rem;
+    border-top: 1px solid #bfbfbf;
+    padding:  30 / @rem 20 / @rem;
     overflow: hidden;
   .goDetail{
     display: block;

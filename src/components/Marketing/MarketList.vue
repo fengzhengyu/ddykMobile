@@ -118,7 +118,7 @@
   }
 
   .item-list {
-    padding: 20 / @rem;
+    padding:  20 / @rem;
     overflow: hidden;
     .goDetail{
       display: block;

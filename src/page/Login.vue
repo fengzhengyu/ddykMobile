@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="member-login">
     <section class="member-main">
       <div class="main-wrapper">
         <p class="text"><i class="iconfont icon-shouji icon1"></i>
@@ -131,12 +131,14 @@
 
 <style lang="less" scoped>
   @import "../style/common.less";
+  
   .mint-header{
     background: @mainColor;
   }
   .member-main{
     width: 100%;
     padding-top: 40px;
+   
   .main-wrapper{
     margin:0 30/@rem 30/@rem 30/@rem;
   .text.error{

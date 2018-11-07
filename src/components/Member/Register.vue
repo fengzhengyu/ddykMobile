@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="member-login">
 
     <section class="member-main">
       <div class="main-wrapper">
@@ -195,6 +195,7 @@
 
 <style lang="less" scoped>
   @import "../../style/common.less";
+ 
   .mint-header{
     background: @mainColor;
   }

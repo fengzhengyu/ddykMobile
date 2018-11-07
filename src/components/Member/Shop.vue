@@ -123,6 +123,7 @@
     width: 640/@rem;
     height: auto;
     padding-top: 40px;
+    
 
   .load-more-wrapper {
 
@@ -132,8 +133,8 @@
 
     display: table;
     height: 150 / @rem;
-    border-top: 0.01rem solid #bfbfbf;
-    padding: 20 / @rem;
+    border-top:1px solid #bfbfbf;
+    padding: 30 / @rem 20 / @rem;
     overflow: hidden;
   .goDetail{
     display: block;

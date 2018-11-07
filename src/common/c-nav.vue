@@ -63,6 +63,7 @@
   @import "../style/common.less";
   .topNav{
     font-size: 16px;
+    background: #fff;
   .nav-wrapper{
     width: 640/@rem;
     height: 60/@rem;

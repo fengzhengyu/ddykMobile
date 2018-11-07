@@ -129,8 +129,8 @@
   }
 
   .item-list {
-    border-top: 0.01rem solid #bfbfbf;
-    padding: 20 / @rem;
+    border-top: 1px solid #bfbfbf;
+    padding: 30 / @rem 20 / @rem;
     overflow: hidden;
   .goDetail{
     display: block;

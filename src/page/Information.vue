@@ -115,7 +115,7 @@
 
 <style lang="less" scoped>
   @import "../style/common.less";
-
+  
   .mint-header{
     background: @mainColor;
   }
@@ -123,13 +123,16 @@
     width: 640/@rem;
     margin: 0;
     padding:40px 0 55px 0;
+   
+ 
   .load-more-wrapper {
     width: 100%;
+    background: #fff;
   }
 
   .item-list {
-    border-top: 0.01rem solid #bfbfbf;
-    padding: 20 / @rem;
+    border-top: 1px solid #bfbfbf;
+    padding:  30 / @rem 20 / @rem;
     overflow: hidden;
   .goDetail{
     display: block;

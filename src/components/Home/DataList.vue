@@ -138,6 +138,7 @@
   .loadwrapper{
     padding-bottom: 55px;
     height:auto;
+  
   }
   .load-more-wrapper{
     width: 100%;
@@ -147,8 +148,8 @@
 
     display:table;
     height: 150/@rem;
-    border-top: 0.01rem solid #bfbfbf;
-    padding: 20/@rem;
+    border-top: 1px solid #bfbfbf;
+    padding: 30/@rem 20/@rem;
     overflow: hidden;
 
   .item-img{

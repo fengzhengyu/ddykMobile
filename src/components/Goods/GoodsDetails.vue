@@ -13,7 +13,7 @@
         </p>
         <p class="effect">
           <span class="name">产品介绍：</span>
-          <span class="desc" id="desc">详见说明</span>
+          <span class="desc" >详见说明</span>
         </p>
         <p class="norms">
           <span class="name">产品规格：</span>
@@ -21,7 +21,7 @@
         </p>
         <p class="require">
           <span class="name">招商要求：</span>
-          <span class="desc">{{dataList.require}}</span>
+          <span class="desc" id="desc">{{dataList.require}}</span>
         </p>
       </div>
       <!--<div class="goods-recommend">-->
@@ -122,11 +122,11 @@
             let s = '';
             s = "jsapi_ticket=" + this.ticket + "&noncestr=" + this.nonceStr + "&timestamp=" + this.timestamp + "&url="+this.url;  
             this.signature = sha1(s);//对所有待签名参数按照字段名的ASCII 码从小到大排序（字典序）
-            // console.log(this.url)
-            // console.log(this.ticket)
-            // console.log(this.nonceStr)
-            // console.log(this.timestamp)
-            // console.log(this.signature)
+            //  console.log(res )
+            //  console.log(this.ticket)
+            //  console.log(this.nonceStr)
+            //  console.log(this.timestamp)
+            //  console.log(this.signature)
             wx.config({
             debug: false,
             appId: 'wxba75f160615a7660', 
@@ -280,6 +280,7 @@
   @import "../../style/common.less";
   .goods-details{
     padding-top: 40px;
+
   .detail-image{
     width: 640/@rem;
     background: #fff;

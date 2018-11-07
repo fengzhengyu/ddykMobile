@@ -139,6 +139,7 @@
   }
   .setting{
     width: 640/@rem;
+   
   .setting-wrapper{
     padding-top: 40px;
     border-bottom: 1px solid #ccc;
@@ -178,7 +179,7 @@
   .integral-wrapper{
     width: 640/@rem;
     overflow: hidden;
-    background: #f3f4f8;
+    background: #f5f5f5;
 
     .list{
       width: 280/@rem;
@@ -186,7 +187,7 @@
       background: #fff;
       float: left;
       box-sizing: border-box;
-      border: 1/@rem solid #fff;
+      border: 1px solid #fff;
       text-align: center;
       padding: 10/@rem 0;
       border-radius: 10/@rem;
@@ -203,7 +204,7 @@
       }
     }
   .list.active{
-    border: 1/@rem solid @mainColor;
+    border: 1px solid @mainColor;
   }
 
   }

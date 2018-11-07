@@ -30,6 +30,7 @@
 
 <style lang="less" scoped>
   @import "../style/common.less";
+  
   .mint-header{
     background: @mainColor;
   }

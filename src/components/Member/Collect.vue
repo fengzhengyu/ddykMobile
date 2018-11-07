@@ -21,7 +21,8 @@
             </p>
             <p class="word-text">
               <span class="name ">主治：</span>
-              <span class="description">{{item.effect}}</span>
+              <span class="description">详见说明</span>
+              <!-- {{item.effect}} -->
             </p>
             <p class="word-text contact">
 
@@ -32,7 +33,7 @@
       </li>
     </ul>
     </mt-loadmore>
-    <div v-show="dataList.length <=0" class="no-data">
+    <div v-if="dataList.length <=0" class="no-data">
       您还没有收藏产品！
     </div>
     <div class="delete-wrapper" v-show="isShow">
@@ -244,18 +245,19 @@
   }
   .collect {
     width: 640/@rem;
-    height: auto;
     padding-top: 40px;
-    padding-bottom: 55px;
+  
+
 
   .load-more-wrapper {
     width: 100%;
+   
   }
 
   .item-list {
     height: 150 / @rem;
-    border-top: 0.01rem solid #bfbfbf;
-    padding: 20 / @rem;
+    border-bottom:1px solid #bfbfbf;
+    padding: 30 / @rem 20 / @rem;
     overflow: hidden;
 
   .goDetail {

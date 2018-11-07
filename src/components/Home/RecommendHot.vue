@@ -66,10 +66,10 @@
 
 
     .list{
-      margin:10/@rem 0 10/@rem 20/@rem;
+      margin:10/@rem 0 10/@rem 10/@rem;
       width: 300/@rem;
       height: 190/@rem;
-      background: white;
+      // background: white;
       .img{
         width: 300/@rem;
         height: 190/@rem;

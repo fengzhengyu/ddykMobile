@@ -58,7 +58,7 @@
     methods:{
       //获取短信验证码
       getAuthCode(){
-        let reg=/^1[34578]{1}\d{9}$/;
+        let reg=/^1[3456789]{1}\d{9}$/;
         if(this.phone == '') {
           this.$toast({
             message: '手机号不能为空',
@@ -77,7 +77,7 @@
         }
         this.$http.post('http://47.94.249.58/ddyk/index.php/Api/sign/sendUpdateMessage',qs.stringify({phone:this.phone})).then(response=>{
           let res = response.data;
-          console.log(res)
+          // console.log(res)
           if(res.flag == 'success'){
             this.sendAuthCode = true;
             this.time = 60;

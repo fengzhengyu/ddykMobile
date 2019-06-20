@@ -4,7 +4,7 @@
       <mt-loadmore :bottom-method="loadBottom" ref="loadmore" :auto-fill="isAutoFill" :bottom-all-loaded="allLoaded">
         <ul class="load-more-wrapper">
           <li class="load-item" v-for="(item,index) in videoList" :key="index">
-             <router-link :to="{name:'video.details',params:{videoId:item.videoId}}" class="link">
+             <router-link :to="{name:'video.details',params:{videoId:item.videoId,page:page}}" class="link">
                <div class="img">
                  <img :src="item.urlPhoto" alt="图片">
                </div>
@@ -53,6 +53,7 @@
           return params
         }]
       }).then((response) => {
+       
           let res = response.data;
           if( res.flag == 'success'){
             //追加下一页的数据

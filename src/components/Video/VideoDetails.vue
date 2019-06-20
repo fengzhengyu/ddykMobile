@@ -18,7 +18,7 @@
     <div class="relate-video">
       <p class="relate-title"><span></span>相关视频</p>
       <div v-for="item in relateList" :key="item.videoId">
-        <router-link :to="{name:'video.details',params:{videoId: item.videoId}}" class="relate-list"  >
+        <router-link :to="{name:'video.details',params:{videoId: item.videoId,page:page}}" class="relate-list"  >
           <div class="img">
             <img :src="item.urlPhoto" alt="图片">
           </div>
@@ -57,7 +57,8 @@
         memberState: false,  //用户状态
         page: 1,
         consumeGold: '', //金币
-        videoArr: []
+        videoArr: [],
+        change: false //路由变了
 
       }
     },
@@ -73,7 +74,7 @@
     },
     watch: {
       $route(){
-        this.page =1;
+        this.change =true;
         this.memberState = false;
         this.videoUrl = '';
         this.getVideoList()
@@ -83,21 +84,27 @@
       getVideoList(){
         //this.page
         let id= this.$route.params.videoId;
-        if(id>0&&id<=10){
-          this.page =1;
-        }else if(id>10&&id<=20){
-          this.page =2;
-        }else if(id>20&&id<=30){
-          this.page =3;
-        }else if(id>30&&id<=40){
-          this.page =4;
-        }else if(id>40&&id<=50){
-          this.page =5;
-        }else if(id>50&&id<=60){
-          this.page =6;
+        if(!this.change){
+          this.page= (this.$route.params.page - 1)
         }else{
-          this.page =100
+           this.page= this.$route.params.page;
         }
+      
+        // if(id>0&&id<=10){
+        //   this.page =1;
+        // }else if(id>10&&id<=20){
+        //   this.page =2;
+        // }else if(id>20&&id<=30){
+        //   this.page =3;
+        // }else if(id>30&&id<=40){
+        //   this.page =4;
+        // }else if(id>40&&id<=50){
+        //   this.page =5;
+        // }else if(id>50&&id<=60){
+        //   this.page =6;
+        // }else{
+        //   this.page =100
+        // }
         this.$http.post('Member/memberSelectVideo',{page:this.page},{
           transformRequest:function(data){
             let params = '';

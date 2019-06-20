@@ -1,10 +1,12 @@
 <template>
     <div>
       <mt-swipe :auto="4000">
-        <a :href="item.jumpUrl" v-for="(item,index) in  sliderData" :key="index">
-          <mt-swipe-item ><img :src="item.picture" alt="图片已丢失" class="img"></mt-swipe-item>
-        </a>
+     
+          <mt-swipe-item v-for="(item,index) in  sliderData" :key="index">
+            <a :href="item.jumpUrl"><img :src="item.picture" alt="图片已丢失" class="img"></a>
 
+          </mt-swipe-item>
+        
       </mt-swipe>
     </div>
 </template>
